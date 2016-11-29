@@ -1,0 +1,155 @@
+:root {
+  --mainColor: #64B5F6;
+  --whiteColor: #FAFAFA;
+  --blackColor: #212121;
+  --grayColor: #979797;
+  --opensansFamily: 'Open Sans', 'sans serif';
+  --ralewayFamily: 'Raleway', 'sans serif';
+}
+
+:root {
+  --container {
+    display: flex;
+
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    padding: 0 20px;
+
+    text-align: center;
+  };
+  --container-page {
+    margin: 96px auto 84px;
+
+    display: flex;
+    width: 1024px;
+
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    padding: 0 36px;
+
+    @media (max-width: 1023px) {
+      width: 100vw;
+
+      padding: 0;
+    }
+  };
+  --container-node {
+    margin-bottom: 20px;
+
+    border-radius: 2px;
+
+    display: flex;
+    width: 100%;
+
+    flex: 1;
+
+    padding: 20px;
+
+    background-color: var(--whiteColor);
+
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .5);
+  };
+  --container-node--noflex {
+    margin-bottom: 20px;
+
+    border-radius: 2px;
+
+    width: 100%;
+
+    padding: 20px;
+
+    background-color: var(--whiteColor);
+
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .5);
+  };
+  --container-node--nopadding {
+    margin-bottom: 20px;
+
+    border-radius: 2px;
+
+    display: flex;
+    width: 100%;
+
+    flex: 1;
+
+    background-color: var(--whiteColor);
+
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .5);
+  };
+  --hide-when-big {
+    @media (min-width: 1024px) {
+      display: none;
+    }
+  };
+  --hide-when-small {
+    @media (max-width: 1023px) {
+      display: none;
+    }
+  };
+
+  /* Text Configuration */
+  --text-giant {
+    color: var(--mainColor);
+
+    font-family: 'Open Sans', 'sans-serif';
+    font-size: 36px;
+  }
+  --text-title {
+    color: var(--blackColor);
+
+    font-family: 'Open Sans', 'sans-serif';
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  /* Input configuration */
+  --container-input {
+    margin-right: 20px;
+
+    border: solid 1px var(--grayColor);
+    border-radius: 2px;
+
+    display: flex;
+
+    width: 298px;
+    height: 48px;
+  };
+
+  --input-text {
+    border: none;
+
+    width: 250px;
+    height: 48px;
+
+    padding: 15px 10px;
+
+    background-color: var(--whiteColor);
+
+    color: var(--blackColor);
+    font-family: 'Open Sans', 'sans-serif';
+
+    outline: none;
+  };
+
+  --input-action-button {
+    border: none;
+
+    width: 48px;
+    height: 48px;
+
+    background-color: var(--whiteColor);
+
+    outline: none;
+  };
+
+  --select {
+    width: 298px;
+    height: 48px;
+
+    padding: 15px 10px;
+
+    font-family: var(--opensansFamily);
+  }
+}
