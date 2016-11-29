@@ -1,0 +1,87 @@
+@import '../../styles/variables.pcss';
+
+.header {
+  width: 100vw;
+  height: 60px;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  background-color: var(--mainColor);
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  margin: 0 auto;
+
+  display: flex;
+  width: 1024px;
+  height: 100%;
+
+  padding: 0 16px 0 36px; // 16px hack because too lazy to make a negative margin for .link below.
+
+  background-color: var(--mainColor);
+
+  @media (max-width: 1023px) {
+    width: calc(100% - 40px);
+
+    padding: 0;
+  }
+}
+
+.logoContainer, .nav {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+.logo, .logoDescriptor {
+  margin: 0;
+
+  color: var(--whiteColor);
+  font-size: 24px;
+}
+
+.logo {
+  font-family: 'Raleway', 'sans-serif';
+  font-weight: 300;
+}
+
+.logoDivider {
+  margin: 0 20px;
+  
+  width: 2px;
+  height: 36px;
+
+  background-color: var(--whiteColor);
+}
+
+.logoDescriptor {
+  font-family: 'Open Sans', 'sans-serif';
+  font-weight: 500;
+}
+
+.nav {
+  display: flex;
+  height: 100%;
+
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.link {
+  padding: 0 20px;
+
+  color: var(--whiteColor);
+  font-family: 'Open Sans', 'sans-serif';
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.linkActive {
+  font-weight: 700;
+}

@@ -1,0 +1,156 @@
+@import '../styles/variables.pcss';
+
+.container {
+  @apply(--container-page);
+}
+
+.containerActions {
+  margin-bottom: 20px;
+
+  display: flex;
+}
+
+.containerActionsLeft, .containerActionsRight {
+  display: flex;
+  flex: 1;
+}
+
+.containerActionsRight {
+  justify-content: flex-end;
+}
+
+.containerInput {
+  @apply(--container-input);
+}
+
+.inputText {
+  @apply(--input-text);
+}
+
+.inputAction {
+  @apply(--input-action-button);
+}
+
+.select {
+  @apply(--select);
+}
+
+.button {
+  border: none;
+  border-radius: 2px;
+
+  padding: 15px 10px;
+
+  background-color: var(--whiteColor);
+
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+
+  color: var(--mainColor);
+  font-family: var(--opensansFamily);
+  font-size: 14px;
+  font-weight: 700;
+
+  line-height: 18px;
+
+  text-decoration: none;
+}
+
+.button:active {
+  box-shadow: none;
+}
+
+.containerAnnouncement {
+  @apply(--container-node--nopadding);
+
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.announcementHeader {
+  border-bottom: solid 1px var(--mainColor);
+
+  display: flex;
+  flex: 1;
+
+  padding: 20px;
+}
+
+.profilePicture {
+  margin-right: 20px;
+
+  width: 48px;
+  height: 48px;
+
+  background-position: center center;
+  background-size: cover;
+}
+
+.profileName {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.profileLink {
+  flex: 1;
+
+  color: var(--mainColor);
+  font-family: var(--opensansFamily);
+  font-size: 18px;
+  font-weight: 700;
+
+  line-height: 28px;
+  text-decoration: none;
+}
+
+.profileTime {
+  flex: 1;
+
+  color: var(--grayColor);
+  font-family: var(--opensansFamily);
+  font-size: 12px;
+  font-weight: 300;
+
+  line-height: 22px;
+}
+
+.settings {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  fill: var(--grayColor);
+
+  cursor: pointer;
+}
+
+.announcementContent {
+  flex: 1;
+
+  padding: 0 20px 20px;
+  
+  color: var(--blackColor);
+  font-family: var(--opensansFamily);
+  font-size: 14px;
+  font-weight: 500;
+
+  line-height: 24px;
+}
+
+.announcementContent > p {
+  margin: 20px 0 0 0;
+}
+
+.announcementBanner {
+  margin-top: 20px;
+
+  flex: 1;
+}
+
+.bannerImage {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

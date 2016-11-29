@@ -1,0 +1,60 @@
+exports[`test should render equal to snapshot 1`] = `
+<section
+  className="containerActions">
+  <div
+    className="containerActionsLeft">
+    <form
+      className="containerInput"
+      id="searchAnnouncementsString"
+      onSubmit={[Function]}>
+      <input
+        className="inputText"
+        id="search"
+        name="search"
+        onChange={[Function]}
+        placeholder="Search"
+        type="text" />
+      <button
+        className="inputAction">
+        <test-file />
+      </button>
+    </form>
+    <form
+      className="containerInput"
+      id="searchAnnouncementsDate"
+      onSubmit={[Function]}>
+      <input
+        className="inputText"
+        id="date"
+        name="date"
+        onChange={[Function]}
+        placeholder="Search by Date (YYYY/MM/DD)"
+        type="date" />
+      <button
+        className="inputAction"
+        type="submit">
+        <test-file />
+      </button>
+    </form>
+  </div>
+  <div
+    className="containerActionsRight">
+    <a
+      className="button"
+      onClick={[Function]}
+      style={Object {}}>
+      NEW ANNOUNCEMENT
+    </a>
+  </div>
+</section>
+`;
+
+exports[`test should throw error when one or more function is not provided 1`] = `"received is not a function"`;
+
+exports[`test should throw error when one or more function is not provided 2`] = `"received is not a function"`;
+
+exports[`test should throw error when one or more function is not provided 3`] = `"received is not a function"`;
+
+exports[`test should throw error when one or more function is not provided 4`] = `"received is not a function"`;
+
+exports[`test should throw error when one or more function is not provided 5`] = `"received is not a function"`;

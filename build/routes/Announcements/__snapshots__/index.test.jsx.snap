@@ -1,0 +1,108 @@
+exports[`test should be equal to snapshot 1`] = `
+<article
+  className="container">
+  <section
+    className="containerActions">
+    <div
+      className="containerActionsLeft">
+      <form
+        className="containerInput"
+        id="searchAnnouncementsString"
+        onSubmit={[Function]}>
+        <input
+          className="inputText"
+          id="search"
+          name="search"
+          onChange={[Function]}
+          placeholder="Search"
+          type="text" />
+        <button
+          className="inputAction">
+          <test-file />
+        </button>
+      </form>
+      <form
+        className="containerInput"
+        id="searchAnnouncementsDate"
+        onSubmit={[Function]}>
+        <input
+          className="inputText"
+          id="date"
+          name="date"
+          onChange={[Function]}
+          placeholder="Search by Date (YYYY/MM/DD)"
+          type="date" />
+        <button
+          className="inputAction"
+          type="submit">
+          <test-file />
+        </button>
+      </form>
+    </div>
+    <div
+      className="containerActionsRight">
+      <a
+        className="button"
+        onClick={[Function]}
+        style={Object {}}>
+        NEW ANNOUNCEMENT
+      </a>
+    </div>
+  </section>
+</article>
+`;
+
+exports[`test should be equal to snapshot 2`] = `
+<article
+  className="container">
+  <section
+    className="containerActions">
+    <div
+      className="containerActionsLeft">
+      <form
+        className="containerInput"
+        id="searchAnnouncementsString"
+        onSubmit={[Function]}>
+        <input
+          className="inputText"
+          id="search"
+          name="search"
+          onChange={[Function]}
+          placeholder="Search"
+          type="text" />
+        <button
+          className="inputAction">
+          <test-file />
+        </button>
+      </form>
+      <form
+        className="containerInput"
+        id="searchAnnouncementsDate"
+        onSubmit={[Function]}>
+        <input
+          className="inputText"
+          id="date"
+          name="date"
+          onChange={[Function]}
+          placeholder="Search by Date (YYYY/MM/DD)"
+          type="date" />
+        <button
+          className="inputAction"
+          type="submit">
+          <test-file />
+        </button>
+      </form>
+    </div>
+    <div
+      className="containerActionsRight">
+      <a
+        className="button"
+        onClick={[Function]}
+        style={Object {}}>
+        NEW ANNOUNCEMENT
+      </a>
+    </div>
+  </section>
+  
+</article>
+`;

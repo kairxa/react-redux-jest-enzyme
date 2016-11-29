@@ -1,0 +1,55 @@
+exports[`test should render equal to snapshot 1`] = `
+<section
+  className="containerAnnouncement">
+  <header
+    className="announcementHeader">
+    <div
+      className="profilePicture"
+      style={
+        Object {
+          "backgroundImage": "url(http://placehold.it/320x320)",
+        }
+      } />
+    <div
+      className="profileName">
+      <a
+        className="profileLink"
+        onClick={[Function]}
+        style={Object {}}>
+        Putra Prawira Tanzil
+      </a>
+      <span
+        className="profileTime">
+        Sun, Nov 27, 2016, 9:16 PM
+      </span>
+    </div>
+    <div
+      className="settings">
+      <test-file
+        className="icon" />
+    </div>
+  </header>
+  <section
+    className="announcementContent">
+    <div>
+      <h1
+        data-sourcepos={undefined}>
+        This is a content
+      </h1>
+      <p>
+        Lorem ipsum dolor sit amet lalala this is just a text for testing.
+      </p>
+      <p>
+        Okay thanks.
+      </p>
+    </div>
+    <div
+      className="announcementBanner">
+      <img
+        alt="Content"
+        className="bannerImage"
+        src="http://placehold.it/1600x900" />
+    </div>
+  </section>
+</section>
+`;
