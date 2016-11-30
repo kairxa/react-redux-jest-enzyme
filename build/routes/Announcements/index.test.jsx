@@ -189,6 +189,17 @@ test('should return announcements as props from mapStateToProps', () => {
       })),
     },
   };
-  const announcements = mapStateToProps(state);
-  expect(announcements).toEqual(mockAnnouncement);
+  /**
+   * Things to remember:
+   * mapStateToProps will return full props object structure.
+   *
+   * In this case, mapStateToProps returns:
+   * {
+   *  announcements: announcement[]
+   * }
+   * Therefore we use props.announcements instead of just props to be matched
+   * with mockAnnouncement.announcements.
+   */
+  const props = mapStateToProps(state);
+  expect(props.announcements).toEqual(mockAnnouncement.announcements);
 });

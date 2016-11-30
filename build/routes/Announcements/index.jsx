@@ -8,8 +8,13 @@ import Announcement from './Announcement';
 
 import styles from './style.pcss';
 
+/**
+ * mapStateToProps is now dumb. Smart things will be handled by
+ * selectors. So props key will always contain value instead of
+ * object with key reference.
+ */
 export const mapStateToProps = state => ({
-  announcements: getAnnouncementsSelector(state.getAnnouncements).announcements,
+  announcements: getAnnouncementsSelector(state.getAnnouncements),
 });
 
 /**

@@ -214,8 +214,9 @@ test('should properly get denormalized payload from selector', () => {
     errorMessage: '',
   };
 
-  // Expect to return NON-immutable JSON data similar to mockAnnouncement
+  // Selector returns direct value,
+  // so we compare it with the value of mockAnnouncement.announcements.
   const denormalized = announcements.getAnnouncementsSelector(getAnnouncementsState);
 
-  expect(denormalized).toEqual(mockAnnouncement);
+  expect(denormalized).toEqual(mockAnnouncement.announcements);
 });

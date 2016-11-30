@@ -70,14 +70,21 @@ export const getAnnouncementsReducer = (state = {
 const getAnnouncementsPayload = state => state.payload;
 
 /**
- * Returned data is expected in this format:
- * {
- *  announcements: announcement[]
- * }
+ * Components should not know at all about data structure.
+ * That's why we now do the object pointing and array slicing
+ * inside selector instead of components.
  *
- * So to get the nicely returned array, components using this must
- * refer to announcements explicitly
- * (i.e. getAnnouncementsSelector(state.getAnnouncements).announcements).
+ * This confusion is brought to you by:
+ * - Normalizr and Denormalizr standards
+ *
+ * Denormalizr would return things like this if the data is an array:
+ * {
+ *  Object: {
+ *    key: value[]
+ *  }
+ * }
+ * Our goal is to return just the value to be used by components.
+ * That explains the object pointing and array slicing here.
  */
 export const getAnnouncementsSelector = createSelector(
   [getAnnouncementsPayload],
@@ -85,6 +92,6 @@ export const getAnnouncementsSelector = createSelector(
     const jsonized = announcementsPayload.toJSON();
     return denormalize(jsonized.result, jsonized.entities, {
       announcements: arrayOf(announcementSchema),
-    });
+    }).announcements.slice();
   },
 );
